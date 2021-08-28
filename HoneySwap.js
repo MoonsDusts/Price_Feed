@@ -42,3 +42,7 @@
     });    
 
     }
+
+    const interval = setInterval(function() {
+        price();
+      }, 45000);
