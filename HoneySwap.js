@@ -1,5 +1,5 @@
 
-    getMoonsPrice();
+ 
 
     async function getMoonsPrice(){
 
@@ -44,5 +44,5 @@
     }
 
     const interval = setInterval(function() {
-        price();
+        getMoonsPrice();
       }, 45000);
