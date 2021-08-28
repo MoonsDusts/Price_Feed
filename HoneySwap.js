@@ -4,10 +4,9 @@
     async function getMoonsPrice(){
 
     
-     const {ChainId, Fetcher, Route, Trade, TokenAmount, TradeType,Token ,Percent } = require ('@1hive/honeyswap-sdk');
+     const {ChainId, Fetcher, Route, Trade, TokenAmount, TradeType,Token} = require ('@1hive/honeyswap-sdk');
     const ethers = require('ethers');
     Web3 = require('web3')
-
     const fs = require('fs');
 
 
@@ -34,7 +33,6 @@
     
 	console.log("Execution Price Xmoon --> Xdai:", trade.executionPrice.toSignificant(6));
  
-
 
     fs.writeFile("price.txt", trade.executionPrice.toSignificant(6) , function(err) {
         if(err) {
