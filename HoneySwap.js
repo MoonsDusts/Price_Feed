@@ -1,14 +1,9 @@
 
-    price();
+    getMoonsPrice();
 
-    async function price(){
+    async function getMoonsPrice(){
 
-     
-
-
-
-
-
+    
      const {ChainId, Fetcher, Route, Trade, TokenAmount, TradeType,Token ,Percent } = require ('@1hive/honeyswap-sdk');
     const ethers = require('ethers');
     Web3 = require('web3')
